@@ -1,0 +1,108 @@
+/* Test--styles*/
+
+.card {
+  width: 20%;
+  height: auto;
+  border: 1px solid;
+  border-color: rgb(235, 235, 247);
+  border-radius: 1rem;
+  margin-left: 600px;
+  margin-top: 200px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.next--button {
+  text-align: center;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 2rem;
+
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.next--button:hover {
+  box-shadow: 0 12px 16px 0 rgba(52, 52, 52, 0.24),
+    0 17px 50px 0 rgba(163, 161, 161, 0.19);
+}
+
+.show-button {
+  text-align: center;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 2rem;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-left: -100px;
+}
+
+.show-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(52, 52, 52, 0.24),
+    0 17px 50px 0 rgba(163, 161, 161, 0.19);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 0.75rem rgba(4, 2, 42, 0.388));
+}
+
+.prev--button {
+  text-align: center;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 2rem;
+
+  margin-left: 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.prev--button:hover {
+  box-shadow: 0 12px 16px 0 rgba(52, 52, 52, 0.24),
+    0 17px 50px 0 rgba(163, 161, 161, 0.19);
+}
+
+/* Form--styles*/
+
+.div--form {
+  width: 25%;
+  height: auto;
+  border: none;
+  background-color: rgb(195, 195, 230);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-top: 100px;
+  margin-left: 600px;
+  box-shadow: 3px 5.9px 5.9px hsla(241, 61%, 38%, 0.41);
+}
+
+.input {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 5px;
+  box-shadow: 3px 5.9px 5.9px hsla(241, 61%, 38%, 0.41);
+}
+input:focus {
+  outline: none;
+}
+
+.btn--reset {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 15px;
+  background-color: #fff;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.btn--reset:hover {
+  box-shadow: 3px 5.9px 5.9px hsla(241, 61%, 38%, 0.41);
+}
