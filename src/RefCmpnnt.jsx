@@ -10,6 +10,7 @@ export default function RefCmpnnt() {
   return (
     <div>
         <input placeholder="search" ref={refValue}/>
+        <button>Click to focus</button>
     </div>
   )
 }
