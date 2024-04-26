@@ -45,7 +45,11 @@ export function Timer(){
    setIsStart(Date.now());
    intervalRef.current= setInterval(()=>{
      setNow(Date.now())
-   },1000)
+   },100)
+    }
+
+    function handleStop(){
+       clearInterval(intervalRef.current);
     }
 
     let seconedPassed=0;
@@ -58,7 +62,7 @@ export function Timer(){
         <button onClick={handleStart} >
           Start
         </button>
-        <button >
+        <button onClick={handleStop}>
           Stop
         </button>
       </>
