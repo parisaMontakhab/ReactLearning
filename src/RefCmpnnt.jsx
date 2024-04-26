@@ -38,11 +38,16 @@ return (
 export function Timer(){
     const[now,setNow]=useState(null);
     const[isStart,setIsStart]=useState(null);
+    
+    function handleStart(){
+   setNow(Date.now());
+   setIsStart(Date.now());
+    }
 
     return(
         <>
         <h1>Time passed:</h1>
-        <button >
+        <button onClick={handleStart} >
           Start
         </button>
         <button >
