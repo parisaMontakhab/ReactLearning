@@ -43,11 +43,18 @@ export function Timer(){
     function handleStart(){
    setNow(Date.now());
    setIsStart(Date.now());
+   intervalRef.current= setInterval(()=>{
+     setNow(Date.now())
+   },1000)
     }
 
+    let seconedPassed=0;
+    if(now !== null || isStart!== null){
+        seconedPassed=(now-isStart) / 1000;
+    }
     return(
         <>
-        <h1>Time passed:</h1>
+        <h1>Time passed:{seconedPassed.toFixed(3)}</h1>
         <button onClick={handleStart} >
           Start
         </button>
