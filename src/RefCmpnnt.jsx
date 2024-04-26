@@ -36,6 +36,9 @@ return (
 
 
 export function Timer(){
+    const[now,setNow]=useState(null);
+    const[isStart,setIsStart]=useState(null);
+
     return(
         <>
         <h1>Time passed:</h1>
