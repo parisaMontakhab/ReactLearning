@@ -13,11 +13,13 @@ import {
   IsertList,ReversList, InputForm
 } from "./Form";
 import RefCmpnnt from "./RefCmpnnt";
+import { Timer } from "./RefCmpnnt";
 
 export default function App() {
   return (
     <div>
 <RefCmpnnt/>
+<Timer/>
       
     </div>
   );

@@ -33,3 +33,19 @@ return (
     </>
   );
 }
+
+
+export function Timer(){
+    return(
+        <>
+        <h1>Time passed:</h1>
+        <button >
+          Start
+        </button>
+        <button >
+          Stop
+        </button>
+      </>
+
+    )
+}
