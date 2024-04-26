@@ -3,14 +3,21 @@ import { useEffect, useRef } from "react"
 
 export default function RefCmpnnt() {
     const refValue=useRef();
-    useEffect(()=>{
+    // useEffect(()=>{
+    //     refValue.current.focus();
+    //     refValue.current.value ="test value"
+    // },[])
+
+    function handelFocus(){
         refValue.current.focus();
-        refValue.current.value ="test value"
-    },[])
+        refValue.current.value ="write here"
+        
+    }
+
   return (
     <div>
         <input placeholder="search" ref={refValue}/>
-        <button>Click to focus</button>
+        <button onClick={handelFocus}>Click to focus</button>
     </div>
   )
 }
