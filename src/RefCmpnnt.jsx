@@ -29,7 +29,7 @@ function handelClick(){
 }
 return (
     <>
-      <button onClick={()=>handelClick(is=>!is)}>
+      <button onClick={handelClick}>
        {isPlay ? "Pause" : "play"}
       </button>
       <video
