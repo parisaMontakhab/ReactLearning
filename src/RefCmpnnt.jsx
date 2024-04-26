@@ -3,7 +3,7 @@
 export default function RefCmpnnt() {
   return (
     <div>
-        <input>search</input>
+        <input placeholder="search"/>
     </div>
   )
 }

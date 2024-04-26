@@ -12,11 +12,12 @@ import {
   CounterList,
   IsertList,ReversList, InputForm
 } from "./Form";
+import RefCmpnnt from "./RefCmpnnt";
 
 export default function App() {
   return (
     <div>
-<InputForm/>
+<RefCmpnnt/>
       
     </div>
   );
