@@ -5,6 +5,7 @@ export default function RefCmpnnt() {
     const refValue=useRef();
     useEffect(()=>{
         refValue.current.focus();
+        refValue.current.value ="test value"
     },[])
   return (
     <div>
