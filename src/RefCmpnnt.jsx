@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 
 export default function RefCmpnnt() {
@@ -21,9 +21,15 @@ export default function RefCmpnnt() {
 //         <button onClick={handelFocus}>Click to focus</button>
 //     </div>
 //   )
+const[isPlay,setIsPlay]= useState(false);
+const refValue= useRef();
+
+function handelPlay(){
+    refValue.current.play();
+}
 return (
     <>
-      <button>
+      <button onClick={handelPlay}>
         play
       </button>
       <video
@@ -33,6 +39,7 @@ return (
         <source
           src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
           type="video/mp4"
+          ref={refValue}
         />
       </video>
     </>
