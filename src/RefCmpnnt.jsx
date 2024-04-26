@@ -24,13 +24,13 @@ export default function RefCmpnnt() {
 const[isPlay,setIsPlay]= useState(false);
 const refValue= useRef();
 
-function handelPlay(){
-    refValue.current.play();
+function handelClick(){
+   setIsPlay(!isPlay)
 }
 return (
     <>
-      <button onClick={handelPlay}>
-        play
+      <button onClick={()=>handelClick(is=>!is)}>
+       {isPlay ? "Pause" : "play"}
       </button>
       <video
         width="250"
