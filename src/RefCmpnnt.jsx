@@ -38,7 +38,8 @@ return (
 export function Timer(){
     const[now,setNow]=useState(null);
     const[isStart,setIsStart]=useState(null);
-    
+    const intervalRef = useRef(null);
+
     function handleStart(){
    setNow(Date.now());
    setIsStart(Date.now());
