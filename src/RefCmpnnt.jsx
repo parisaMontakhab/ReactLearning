@@ -8,7 +8,11 @@ const refValue=useRef();
 
 function handelClick(){
    setIsPlay(!isPlay);
-   refValue.current.play();
+   if(isPlay){
+    refValue.current.pause();
+   }else{
+    refValue.current.play();
+   }
 }
 return (
     <>
