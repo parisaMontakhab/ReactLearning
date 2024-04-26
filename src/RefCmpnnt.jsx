@@ -21,4 +21,20 @@ export default function RefCmpnnt() {
 //         <button onClick={handelFocus}>Click to focus</button>
 //     </div>
 //   )
+return (
+    <>
+      <button>
+        play
+      </button>
+      <video
+        width="250"
+       
+      >
+        <source
+          src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </>
+  );
 }
