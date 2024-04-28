@@ -15,14 +15,14 @@ export default function RefCmpnnt() {
   return (
     <>
       <button onClick={handelClick}>{isPlay ? "Pause" : "play"}</button>
-     <Video/>
+     <Video ref={refValue}/>
     </>
   );
 }
 
 const Video = forwardRef((props,ref)=>{
   return (
-    <video width="250">
+    <video width="250" ref={ref}>
       <source
         src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
         type="video/mp4"
