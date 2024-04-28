@@ -71,11 +71,12 @@ export function Timer(){
 }
 
 export function InputParent(){
+  const ref = useRef(null);
  
   return(
    <div>
     <h1>For learning ForwardRef:</h1>
-    <Input label="search filed"/>
+    <Input label="search filed" ref={ref}/>
    </div>
   )
 }
