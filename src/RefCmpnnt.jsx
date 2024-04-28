@@ -72,21 +72,25 @@ export function Timer(){
 
 export function InputParent(){
   const ref = useRef(null);
+
+  function handleClick(){
+  ref.current.focus();
+  }
  
   return(
    <div>
     <h1>For learning ForwardRef:</h1>
-    <Input label="search filed" ref={ref}/>
+    <Input label="search filed" ref={ref} onClick={handleClick}/>
    </div>
   )
 }
 
-const Input =  forwardRef(function Input({label},ref){
+const Input =  forwardRef(function Input({label,onClick},ref){
   return(
     <label >
       {label}:
       <input ref={ref}/>
-      <button>Click to Focus</button>
+      <button onClick={onClick}>Click to Focus</button>
     </label>
   )
 })
