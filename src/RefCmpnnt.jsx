@@ -75,15 +75,15 @@ export function InputParent(){
   return(
    <div>
     <h1>For learning ForwardRef:</h1>
-    <Input />
+    <Input label="search filed"/>
    </div>
   )
 }
 
-const Input =  forwardRef(function Input(props,ref){
+const Input =  forwardRef(function Input({label},ref){
   return(
     <label>
-      <input/>
+      <input label={label} ref={ref}/>
       <button>Click to Focus</button>
     </label>
   )
