@@ -74,6 +74,16 @@ export function InputParent(){
   return(
    <div>
     <h1>For learning ForwardRef:</h1>
+    <Input/>
    </div>
+  )
+}
+
+function Input(){
+  return(
+    <label>
+      <input/>
+      <button>Click to Focus</button>
+    </label>
   )
 }
