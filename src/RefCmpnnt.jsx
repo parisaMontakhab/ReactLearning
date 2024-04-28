@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState,forwardRef} from "react"
 
 
 export default function RefCmpnnt() {
@@ -82,8 +82,9 @@ export function InputParent(){
 
 const Input =  forwardRef(function Input({label},ref){
   return(
-    <label>
-      <input label={label} ref={ref}/>
+    <label >
+      {label}:
+      <input ref={ref}/>
       <button>Click to Focus</button>
     </label>
   )
