@@ -20,7 +20,7 @@ export default function RefCmpnnt() {
   );
 }
 
-function Video() {
+const Video = forwardRef((props,ref)=>{
   return (
     <video width="250">
       <source
@@ -29,7 +29,7 @@ function Video() {
       />
     </video>
   );
-}
+})
 
 export function Timer() {
   const [now, setNow] = useState(null);
