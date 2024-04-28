@@ -69,3 +69,11 @@ export function Timer(){
 
     )
 }
+
+export function InputParent(){
+  return(
+   <div>
+    <h1>For learning ForwardRef:</h1>
+   </div>
+  )
+}
