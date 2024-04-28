@@ -71,20 +71,20 @@ export function Timer(){
 }
 
 export function InputParent(){
-  const refValue =useRef();
+ 
   return(
    <div>
     <h1>For learning ForwardRef:</h1>
-    <Input ref={refValue}/>
+    <Input />
    </div>
   )
 }
 
-function Input(){
+const Input =  forwardRef(function Input(props,ref){
   return(
     <label>
       <input/>
       <button>Click to Focus</button>
     </label>
   )
-}
+})
