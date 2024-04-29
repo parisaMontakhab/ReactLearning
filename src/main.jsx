@@ -14,13 +14,12 @@ import {
 } from "./Form";
 import RefCmpnnt from "./RefCmpnnt";
 import { Timer,InputParent } from "./RefCmpnnt";
+import RedusUse from "./RedusUse";
 
 export default function App() {
   return (
     <div>
-<RefCmpnnt/>
-<Timer/>
-<InputParent/>
+<RedusUse/>
       
     </div>
   );
