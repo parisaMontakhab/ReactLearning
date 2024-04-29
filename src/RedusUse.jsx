@@ -12,13 +12,16 @@ export default function RedusUse() {
   const[count,dispatch] = useReducer(reducer,intialState);
 
   function handleInc() {
-    setCount((c)=> c+1);
+   // setCount((c)=> c+1);
+   dispatch({ type: 'Inc' })
   }
   function handleRes() {
-    setCount(intialState);
+    dispatch({ type: 'Res' })
+    //setCount(intialState);
   }
   function handleDec() {
-    setCount((c)=> c-1);
+    dispatch({ type: 'Dec' })
+   // setCount((c)=> c-1);
   }
   return (
     <div>
