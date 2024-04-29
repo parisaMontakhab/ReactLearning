@@ -1,8 +1,15 @@
 import React, { useReducer, useState } from "react";
+
+
+function reducer(state,action){
+
+}
+
+
 const intialState = 0;
 export default function RedusUse() {
   //const [count, setCount] = useState(intialState);
-  const[count,dispatch] = useReducer(()=>{},intialState);
+  const[count,dispatch] = useReducer(reducer,intialState);
 
   function handleInc() {
     setCount((c)=> c+1);
