@@ -2,7 +2,9 @@ import React, { useReducer, useState } from "react";
 
 
 function reducer(state,action){
-
+if(action.type==="Inc") return state+1;
+if(action.type==="Res") return intialState;
+if(action.type==="Dec") return state-1;
 }
 
 
