@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 const intialState = 0;
 export default function RedusUse() {
-  const [count, setCount] = useState(intialState);
+  //const [count, setCount] = useState(intialState);
+  const[count,dispatch] = useReducer(()=>{},intialState);
 
   function handleInc() {
     setCount((c)=> c+1);
